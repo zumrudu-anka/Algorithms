@@ -14,9 +14,9 @@ veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri 
         </ul>
     </li>
     <li>
-        Jump Search
+        <b>Jump Search</b>
     </li>
     <li>
-        Binary Search
+        <b>Binary Search</b>
     </li>
 </ul>
