@@ -1,7 +1,5 @@
-## Algorithms
-        Algoritma, istenen çıktıyı elde etmek için belirli bir sırada gerçekleştirilecek bir dizi talimatı
-    adım adım tanımlayan bir prosedürdür. Algoritmalar genellikle altta yatan dillerden bağımsız olarak oluşturulur,
-    yani birden fazla programlama dilinde bir algoritma uygulanabilir. Bazı arama algoritmaları:
+<h2>Algorithms</h2>
+<p>&nbsp&nbsp&nbsp&nbsp&nbspAlgoritma, istenen çıktıyı elde etmek için belirli bir sırada gerçekleştirilecek bir dizi talimatı adım adım tanımlayan bir prosedürdür. Algoritmalar genellikle altta yatan dillerden bağımsız olarak oluşturulur, yani birden fazla programlama dilinde bir algoritma uygulanabilir. Bazı arama algoritmaları:</p>
 <ul>
     <li>
         <b>Linear Search</b> - Doğrusal arama çok basit bir arama algoritmasıdır. Tüm öğeler üzerinde birer birer sıralı bir arama yapılır. Her değer kontrol edilir ve eğer bir eşleşme bulunursa o zaman o değer geri döndürülür, aksi takdirde üzerinde arama yapılan
