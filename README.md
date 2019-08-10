@@ -4,6 +4,7 @@
     <li>
         <b>Linear Search</b> - Doğrusal arama çok basit bir arama algoritmasıdır. Tüm öğeler üzerinde birer birer sıralı bir arama yapılır. Her değer kontrol edilir ve eğer bir eşleşme bulunursa o zaman o değer geri döndürülür, aksi takdirde üzerinde arama yapılan
 veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri dizisi üzerinde olmak üzere 2 farklı şekilde oluşturulabilir:
+        <img src="" alt="Linear Search"/>
         <ul>
             <li>
                 <b>For Unordered List</b> : Sıralı olmayan veri dizisinde arama, aranan eleman bulunmadığı takdirde veri setinin sonuna kadar devam eder.
@@ -17,6 +18,6 @@ veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri 
         <b>Jump Search</b>
     </li>
     <li>
-        <b>Binary Search</b>
+        <b>Binary Search</b> - 
     </li>
 </ul>
