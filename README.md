@@ -3,8 +3,8 @@
 <ul>
     <li>
         <b>Linear Search</b> - Doğrusal arama çok basit bir arama algoritmasıdır. Tüm öğeler üzerinde birer birer sıralı bir arama yapılır. Her değer kontrol edilir ve eğer bir eşleşme bulunursa o zaman o değer geri döndürülür, aksi takdirde üzerinde arama yapılan
-veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri dizisi üzerinde olmak üzere 2 farklı şekilde oluşturulabilir:         <br>
-            <img style="text-align:center" src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/linear_search.gif" alt="Linear Search"/>
+veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri dizisi üzerinde olmak üzere 2 farklı şekilde oluşturulabilir: 
+    <img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/linear_search.gif" alt="Linear Search"/>
         <ul>
             <li>
                 <b>For Unordered List</b> : Sıralı olmayan veri dizisinde arama, aranan eleman bulunmadığı takdirde veri setinin sonuna kadar devam eder.
