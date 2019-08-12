@@ -24,6 +24,16 @@
         <br><code><b> mid = low + (high - low) / 2 </code> &nbsp&nbsp --> &nbsp&nbsp <code>mid = 0 + (9 - 0) / 2 = 4.5</code></b>&nbsp&nbsp(4 tamsayı değeri)<br><br>      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_1.jpg" alt="Binary Search1"/><br><br>
         Yani dizinin ortasındaki indis 4 olarak bulunur. Daha sonra dizinin 4. indisindeki değer ile aranan değer yani 31 değeri karşılaştırılır. Dizinin 4. indisindeki 27 değeri ile aranan 31 değerinin eşleşmediği tespit edilir. Aranan 31 değeri 27'den büyük olduğu ve dizimiz de sıralı bir dizi olduğu için, aranan değerimiz dizinin üst kısmında(4. indisin sağ tarafındaki alt dizide) bulunabilir. Bu yüzden 31 değerini bu alt dizide aramak üzere dizimizin en küçük indisini ortanca indisten 1 büyük olmak üzere güncelleyeceğiz:<br><br>
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_2.jpg" alt="Binary Search2"/><br><br>
-        <code><b> low = mid + 1 <b></code><br><code><b> mid = low + (high - low) / 2 </b></code><br><br>
+        <code><b> low = mid + 1 </b></code><br><code><b> mid = low + (high - low) / 2 </b></code>
+        Artık yeni ortanca indisimiz 7 olduğu için, 7. indisteki değer ile 31 değerini karşılaştırıyoruz.<br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_3.jpg" alt="Binary Search3"/><br><br>
+        Dizinin 7. indisindeki değer ile aradığımız 31 değeri eşleşmediği için ve aradığımız değer bu indisteki 35 değerinden küçük olduğu için aranan değerimizi alt dizinin alt dizisinde(7. indisin sol tarafındaki yeni alt dizide) aramalıyız.<br><br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_4.jpg" alt="Binary Search4"/><br><br>
+        <code><b> high = mid - 1 </b></code><br><code><b> mid = low + (high - low) / 2 </b></code>
+        Yeni ortanca indisimiz 5 olarak hesaplanmış oldu.<br><br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_5.jpg" alt="Binary Search5"/><br><br>
+        Dizinin 5. indisindeki değer ile aradığımız değeri tekrar karşılaştığımızda bir eşleşme olduğunu tespit ettik.<br><br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_6.jpg" alt="Binary Search6"/><br><br>
+        Böylece aradığımız değerin hedef veri setinin 5. indisinde bulunduğu sonucunu elde ettik.
     </li>
 </ul>
