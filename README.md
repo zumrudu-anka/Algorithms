@@ -34,6 +34,6 @@
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_5.jpg" alt="Binary Search5"/><br><br>
         Dizinin 5. indisindeki değer ile aradığımız değeri tekrar karşılaştığımızda bir eşleşme olduğunu tespit ettik.<br><br>
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_6.jpg" alt="Binary Search6"/><br><br>
-        Böylece aradığımız değerin hedef veri setinin 5. indisinde bulunduğu sonucunu elde ettik.
+        Böylece aradığımız değerin hedef veri setinin 5. indisinde bulunduğu sonucunu elde etmiş olduk.
     </li>
 </ul>
