@@ -10,7 +10,7 @@
                 <b>For Unordered List</b> : Sıralı olmayan veri dizisinde arama, aranan eleman bulunmadığı takdirde veri setinin sonuna kadar devam eder.
             </li>
             <li>
-                <b>For Ordered List</b> : Sıralı veri dizisinde ise aranan eleman dizideki her elemanla kıyaslanırken eğer kıyaslandığı elemandan küçük(veri dizisi küçükten büyüğe doğru sıralanmış ise) olduğu bir durum olursa, dizi sıralı olduğu için aranan elemanın ilgili index'ten sonra bulunabilme ihtimali olmayacağı için arama otomatik olarak sonlandırılır. Böylece zaman açısından daha verimli bir sonuç elde edilir.
+                <b>For Ordered List</b> : Sıralı veri dizisinde ise aranan eleman dizideki her elemanla kıyaslanırken eğer kıyaslandığı elemandan küçük(veri dizisi küçükten büyüğe doğru sıralanmış ise) olduğu bir durum olursa, dizi sıralı olduğu için aranan elemanın ilgili index'ten sonra bulunabilme ihtimali olmayacağı için arama otomatik olarak sonlandırılır. Böylece zaman açısından daha verimli bir sonuç elde edilir.<br><br>
             </li>
         </ul>
     </li>
@@ -27,7 +27,7 @@
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/jump-search-1.jpg" alt="Jump Search"/><br><br>
         Öncelikle step size yani atlama adımı uzunluğumuzu bulalım. Dizi 9 elemanlı olduğu için:<br>
         <b><code>step_size = √9 = 3</code></b><br>
-        olarak bulunmuş olur. Daha sonra ilk elemandan itibaren 3 adım atlayarak bulunduğumuz değeri aradığımız değer ile karşılaştırırız. İlk atlamadaki 4 değeri ile 5 değeri eşleşmediği ve 4 değeri 5 değerinden küçük olduğu için bir adım daha atlarız. İkinci atlamamızda bulunduğumuz indisin 7 olan değeri aradığımız 5 değerinden büyük olduğu için artık ileriye doğru atlama yapmayız ve bu değerimizi bir önceki adımımızda durduğumuz indis ile şu an durduğumuz indis arasında doğrusal arama yaparak ararız. Böylece aradığımız 5 değerini dizinin 4 numaralı indisinde bulmuş oluruz.
+        olarak bulunmuş olur. Daha sonra ilk elemandan itibaren 3 adım atlayarak bulunduğumuz değeri aradığımız değer ile karşılaştırırız. İlk atlamadaki 4 değeri ile 5 değeri eşleşmediği ve 4 değeri 5 değerinden küçük olduğu için bir adım daha atlarız. İkinci atlamamızda bulunduğumuz indisin 7 olan değeri aradığımız 5 değerinden büyük olduğu için artık ileriye doğru atlama yapmayız ve bu değerimizi bir önceki adımımızda durduğumuz indis ile şu an durduğumuz indis arasında doğrusal arama yaparak ararız. Böylece aradığımız 5 değerini dizinin 4 numaralı indisinde bulmuş oluruz.<br><br>
     </li>
     <li>
         <b>Binary Search</b> - İkili arama böl ve yönet prensibi ile çalışan hızlı bir arama algoritmasıdır. Bu algoritma sıralı veri setleri üzerinde düzgün olarak çalışır. İkili arama, aranan değer ile veri dizisinin en ortasındaki değeri karşılaştırır. Bir eşleşme olursa, o zaman ilgili index geri döndürülür. Eşleşme olmamışsa ve ortadaki değer aranan değerden büyükse, değer ortadaki indexin solundaki alt dizide, aksi halde ortadaki indexin sağındaki alt dizide aranır. Bu işlem, alt dizinin boyutu sıfıra inene kadar devam eder. Görselleştirilmiş bir örnek ile ikili aramayı daha iyi anlayacağınızı umuyorum.<br><br>
@@ -46,6 +46,30 @@
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_5.jpg" alt="Binary Search5"/><br><br>
         Dizinin 5. indisindeki değer ile aradığımız değeri tekrar karşılaştığımızda bir eşleşme olduğunu tespit ettik.<br><br>
  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/binary_search_6.jpg" alt="Binary Search6"/><br><br>
-        Böylece aradığımız değerin hedef veri setinin 5. indisinde bulunduğu sonucunu elde etmiş olduk.
+        Böylece aradığımız değerin hedef veri setinin 5. indisinde bulunduğu sonucunu elde etmiş olduk.<br><br>
+    </li>
+    <li>
+        <b>Interpolation Search</b> - İnterpolasyon arama algoritması ikili arama algoritmasına çok benzer bir algoritmadır. Yine sıralı veri setleri üzerinde, böl ve yönet prensibiyle çalışır. İkili aramadan farkı ise ikili arama algoritması ile arama yaparken dizinin ortanca elemanına bakıyorduk ve karşılaştırma sonucuna göre diziyi ikiye bölüp dizinin sağ veya sol alt dizisinde değerimizi arıyorduk. İnterpolasyon aramada ise diziyi böleceğimiz pozisyon değerini, yani merkez alınacak indisi aşağıdaki formül ile hesaplıyoruz:<br><br>
+        <code><b> position = low + [  (high - low) / (array[high] - array[low]) * (value - array[low]) ] </b></code><br>
+        &nbsp&nbsp&nbsp&nbsp<b><em>position</em></b>&nbsp&#x27BA;&nbspKarşılaştırma yapacağımız ve karşılaştırma sonucuna göre diziyi bölmek için baz alacağımız pozisyon<br>
+        &nbsp&nbsp&nbsp&nbsp<b><em>array</em></b>&nbsp&nbsp&nbsp&nbsp&nbsp&#x27BA;&nbspArama yaptığımız dizi<br>
+        &nbsp&nbsp&nbsp&nbsp<b><em>low</em></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#x27BA;&nbspDizinin en küçük indisi<br>
+        &nbsp&nbsp&nbsp&nbsp<b><em>high</em></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#x27BA;&nbspDizinin en büyük indisi<br>
+        &nbsp&nbsp&nbsp&nbsp<b><em>value</em></b>&nbsp&nbsp&nbsp&nbsp&nbsp&#x27BA;&nbspDizide bulmak için arama yaptığımız değer<br><br>
+        Algoritma ise aşağıdaki adımlardan oluşuyor:<br>
+        <ul>
+            <li>
+                Pozisyon değerini hesapla ve aranan değer ile dizinin pozisyon numaralı indisindeki değeri karşılaştır.
+            </li>
+            <li>
+                Eşleşme olursa geriye değerin bulunduğuna dair bir sonuç döndür.
+            </li>
+            <li>
+                Aksi halde, aranan değer dizinin ilgili indisinden küçükse sol, büyükse sağ alt dizide pozisyon hesapla ve arama yap.
+            </li>
+            <li>
+                Eşleşme bulunana kadar veya alt dizi boyutu 0 olana kadar işlemlere devam et.
+            </li>
+        </ul>
     </li>
 </ul>
