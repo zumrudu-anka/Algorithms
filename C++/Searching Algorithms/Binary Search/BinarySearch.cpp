@@ -18,10 +18,12 @@ int* BinarySearch(int* list, int size, int value){
         }
         else if (list[(last_index + first_index) / 2] < value)
         {
+            cout<<endl<<"Buyuk Yarida Aranacak"<<endl;
             first_index = (last_index + first_index) / 2 + 1;
         }
         else
         {
+            cout<<endl<<"Kucuk Yarida Aranacak"<<endl;
             last_index = (last_index + first_index) / 2;
         }
     }
