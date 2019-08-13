@@ -73,3 +73,10 @@
         </ul>
     </li>
 </ul>
+<h3>Sorting Algorithms</h3>
+<p>&nbsp&nbsp&nbsp&nbsp&nbspSıralama algoritmaları, verileri belirli bir düzende sıralama yollarını belirtir. En yaygın sıralamalar sayısal veriler veya sözlük sıralamalarıdır. Sıralamanın önemi, veriler sıralı bir şekilde saklanırsa, bu veriler üzerinde arama yapmanın çok yüksek bir performans düzeyine getirilebileceği gerçeğinde yatmaktadır. Sıralama, telefon rehberlerinde veya sözlüklerdeki kelimelerde olduğu gibi verileri daha okunabilir formatlarda göstermek için de kullanılabilir.</p>
+<ul>
+    <li>
+        <b>Bubble Sort</b> - Kabarcık sıralama basit bir sıralama algoritmasıdır. Bu sıralama algoritması, her bir bitişik eleman çiftinin karşılaştırıldığı ve sıralı olmadıklarında elemanların yer değiştirildiği karşılaştırma tabanlı bir algoritmadır. Bu algoritma, büyük veri kümeleri için uygun değildir. Çünkü n elemanlı bir dizi için ortalama ve en kötü durum karmaşıklığı O(n<sup>2</sup>)'dir. Aşağıdaki örnek ile kabarcık algoritmasını görselleştirerek anlamaya çalışalım:<br><br>
+    </li>
+</ul>
