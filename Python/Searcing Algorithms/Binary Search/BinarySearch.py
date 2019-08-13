@@ -13,7 +13,7 @@ def BinarySearch(list, value):
 
     return False, -1
 
-list = [3, 5, 7, 15, 18, 27, 66, 78, 100, 105]
+list = [3, 5, 7, 15, 18, 27, 66, 78, 100, 105, 110, 138]
 
-found , index = BinarySearch(list, 18)
+found , index = BinarySearch(list, 139)
 print(found , ',', index)
