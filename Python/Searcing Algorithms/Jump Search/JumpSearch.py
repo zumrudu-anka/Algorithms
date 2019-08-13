@@ -3,7 +3,7 @@ def JumpSearch(liste, value):
     jump_length = int(math.sqrt(len(liste)))
     for i in range(jump_length, len(liste), jump_length):
         if liste[i] > value:
-            for j in liste[(i - jump_length): (i + 1)]:
+            for j in liste[(i - jump_length):i]:
                 if j == value:
                     return True, liste.index(j)
         else:
