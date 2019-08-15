@@ -10,16 +10,16 @@ void swap(int* list, int left, int right){
 }
 
 int Partition(int* list, int low, int high){
-    int index = low;
+    int pivot = low;
     for (int i = low; i < high; i++)
     {
         if(list[i] < list[high]){
-            swap(list, i , index);
-            index++;
+            swap(list, i , pivot);
+            pivot++;
         }
     }
-    swap(list, index , high);
-    return index;
+    swap(list, pivot , high);
+    return pivot;
 }
 
 void QuickSort(int* list, int low, int high){
