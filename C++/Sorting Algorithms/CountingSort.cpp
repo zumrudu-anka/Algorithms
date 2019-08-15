@@ -39,7 +39,7 @@ void CountingSort(int* list, int size){
 int main(){
     int list[] = { 13, 55, 27, 35, 18, 1, 0, 14, 13, 14, 19, 59 };
     CountingSort(list, arrayLength(list));
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < arrayLength(list); i++)
     {
         cout<<list[i]<<endl;
     }
