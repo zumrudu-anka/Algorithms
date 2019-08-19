@@ -2,7 +2,7 @@
 
 1. [Algorithms(Algoritmalar)](#algorithms)
     1. [Searcing Algorithms(Arama Algoritmaları)](#searcing-algorithms)
-        1. [Linear(Sequential) Search(Doğrusal Arama)](linear-search)
+        1. [Linear(Sequential) Search(Doğrusal Arama)](#linear-search)
     
 ## Algorithms
 
@@ -12,7 +12,7 @@
 
 <ul>
     <li>
-        <a>Linear Search</a> - Doğrusal arama çok basit bir arama algoritmasıdır. Tüm öğeler üzerinde birer birer sıralı bir arama yapılır. Her değer kontrol edilir ve eğer bir eşleşme bulunursa o zaman o değerin bulunduğu index geri döndürülür, aksi takdirde üzerinde arama yapılan veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri dizisi üzerinde olmak üzere 2 farklı şekilde oluşturulabilir:
+        <b id="linear-search">Linear Search</b> - Doğrusal arama çok basit bir arama algoritmasıdır. Tüm öğeler üzerinde birer birer sıralı bir arama yapılır. Her değer kontrol edilir ve eğer bir eşleşme bulunursa o zaman o değerin bulunduğu index geri döndürülür, aksi takdirde üzerinde arama yapılan veri dizisinin sonuna kadar arama devam eder. Sıralı ve sıralı olmayan veri dizisi üzerinde olmak üzere 2 farklı şekilde oluşturulabilir:
         <ul>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://github.com/zumrudu-anka/Algorithms/blob/master/Presentation/linear_search.gif" alt="Linear Search"/>
             <li>
