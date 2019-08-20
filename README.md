@@ -12,6 +12,7 @@
         1. [Insertion Sort(Eklemeli Sıralama)](#insertion-sort)
         1. [Selection Sort(Seçerek Sıralama)](#selection-sort)
         1. [Quick Sort(Hızlı Sıralama)](#quick-sort)
+1. [Kaynakça](#kaynakça)
         
 ## Algorithms
 
@@ -190,4 +191,11 @@
         Yukarıdaki animasyonu beraber inceleyelim. Öncelikle dizinin sonuncu elemanı referans değer olarak seçildi. Daha sonra dizinin en küçük indisi low index ve sondan ikinci indisi ise high index olarak seçildi. Low index değeri high index değerinden küçük olmak şartıyla<b>(1. kural)</b>; low index eleman değeri referans değerden küçük olduğu sürece<b>(2. kural)</b> low index değeri artırıldı ve high index eleman değeri referans değerden büyük olduğu sürece<b>(3. kural)</b> high index değeri azaltıldı. <b>1. kural</b> sağlandığı sürece <b>hem 2. hem de 3. kuralın</b> sağlanmadığı low index ve high index değerleri tespit edildiğinde bu indexlerin değerlerinin yerleri değiştirildi. <b>1. kural</b> bozulduğunda yani low index değerinin high index değerine eşit olma durumu söz konusu olduğunda, eşit oldukları index eleman değeri ile referans değerin yerleri değiştirildi ve referans değer pivot değer kabul edilerek liste bu pivot değerin sol tarafı ve sağ tarafı olmak üzere ikiye bölündü. Aynı işlemler bu bölünmüş diziler üzerinde de uygulanmaya devam edecek ve algoritma sonlandığında tüm dizi sıralanmış olacaktır.<br>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspAynı algoritmaların çözümlerine farklı yaklaşımlar olabilir. Bu repository'den ulaşabileceğiniz Quick Sort algoritması çözümünde yine dizinin son elemanı referans değer olarak seçildi. Dizinin ilk index değeri low index olarak seçildi ve ilk eleman değerinden başlanarak dizinin sondan 2. elemanına kadar referans değerden küçük olan eleman ile dizinin low index değerindeki eleman değiştirildi ve low index değeri bu işlem her gerçekleştiğinde 1 arttırıldı. Bu iterasyon tamamlandığında referans değerden küçük olan değerlerin hepsi low index değerinin sol tarafında birikmiş oldu. Böylece bu low index değerinin ve sağ tarafındaki değerlerin referans değere eşit veya büyük olduğunu garantilemiş olduk. Low index değeri ile referans değerin yerini değiştirdiğimizde ise artık low index değeri referans aldığımız değeri göstermiş oldu ve böylece referans değerin sol tarafında bu değerden küçük elemanlar ve sağ tarafında ise kendisine eşit veya büyük elemanlar birikmiş oldu. Bu değeri pivot değer olarak seçtik ve büyük listeyi bu pivot değerin sol ve sağ tarafı olmak üzere ikiye böldük. Aynı işlemleri bu bölünmüş dizilere de uygulayarak algoritmamızı tamamladık.<br><br> 
     </li>
+</ul>
+
+## Kaynakça
+
+<ul>
+    <li> http://www.tutorialspoint.com/ </li>
+    <li> https://www.geeksforgeeks.org/ </li>
 </ul>
