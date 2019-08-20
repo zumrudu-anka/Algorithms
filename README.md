@@ -1,4 +1,4 @@
-<h2>Contents(İçindekiler)<h2>
+## Contents(İçindekiler)
 
 1. [Algorithms(Algoritmalar)](#algorithms)
     1. [Searcing Algorithms(Arama Algoritmaları)](#searcing-algorithms)
